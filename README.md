@@ -36,7 +36,7 @@ Archivo JFLAP: [texto-a-hex.jff]()
 
 ## Simulador
 
-Link al simulador: turingmachinesimulator.com/shared/qhmguggqgp
+Link al simulador: <turingmachinesimulator.com/shared/qhmguggqgp>
 
 ## Complejidad
 
