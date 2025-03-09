@@ -2,7 +2,6 @@ name: Texto a Hexadecimal
 init: q0
 accept: q55
 
-
 q0, 0
 q1, 0, >
 
