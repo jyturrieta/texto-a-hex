@@ -85,18 +85,18 @@ Archivo de entrada: [textoahex.mt]()
 
 ### Inputs
 
-| Entrada | Salida | Movimientos | Diferencia | Espacios |
+| Entrada | Salida | Movimientos | Diferencia n+1 | Espacios |
 | ------- | ------ | ----------- | ------ | -------- |
-| u# | 75 | 16 | - | 
-| un# | 756e | 43 | +27 | 
+| u# | 75 | 16 | - |
+| un# | 756e | 43 | +27 |
 | una# | 756e61 | 82 | +39 |
-| unah# | 756e6168 | 133 | +51 |
+| unah# | 756e6168 | 133 | +51 | 
 | unahu# | 756e616875 | 196 | +63 |
 | unahur# | 756e61687572 | 271 | +75 |
 | unahur2# | 756e6168757232 | 358 | +87 |
 | unahur20# | 756e616875723233 | 457 | +99 |
 | unahur202# | 756e61687572323332 | 568 | +111 |
-| unahur2025# | 756e6168757232333235 | 691 | +123 |
+| unahur2025# | 756e6168757232333235 | 691 | +123  |
 
 
 ### Complejidad temporal
@@ -125,4 +125,4 @@ Como se puede visualizar en la columna _movimientos_ de la tabla inputs, la cant
 
 ### Complejidad espacial
 
-La complejidad espacial de la máquina de Turing es O(n), donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que almacenar la cadena de entrada y su representación hexadecimal en la cinta, lo que requiere espacio lineal en función del tamaño de la entrada. Sin embargo, como la máquina de Turing tiene que mover la cabeza hacia atrás y hacia adelante en la cinta para escribir el resultado, esto añade un factor adicional de O(n) al espacio total.
+La complejidad espacial de la máquina de Turing es ```O(n)```, donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que almacenar la cadena de entrada y su representación hexadecimal en la cinta, lo que requiere espacio lineal en función del tamaño de la entrada.
