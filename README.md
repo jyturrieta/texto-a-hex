@@ -87,16 +87,16 @@ Archivo de entrada: [textoahex.mt]()
 
 | Entrada | Salida | Movimientos | Diferencia n+1 | Espacios |
 | ------- | ------ | ----------- | ------ | -------- |
-| u# | 75 | 16 | - |
-| un# | 756e | 43 | +27 |
-| una# | 756e61 | 82 | +39 |
-| unah# | 756e6168 | 133 | +51 | 
-| unahu# | 756e616875 | 196 | +63 |
-| unahur# | 756e61687572 | 271 | +75 |
-| unahur2# | 756e6168757232 | 358 | +87 |
-| unahur20# | 756e616875723233 | 457 | +99 |
-| unahur202# | 756e61687572323332 | 568 | +111 |
-| unahur2025# | 756e6168757232333235 | 691 | +123  |
+| u# | 75 | 16 | - | 6 |
+| un# | 756e | 43 | +27 | 9 |
+| una# | 756e61 | 82 | +39 | 12
+| unah# | 756e6168 | 133 | +51 | 15 | 
+| unahu# | 756e616875 | 196 | +63 | 18 |
+| unahur# | 756e61687572 | 271 | +75 | 21 |
+| unahur2# | 756e6168757232 | 358 | +87 |  24 |
+| unahur20# | 756e616875723233 | 457 | +99 | 27 |
+| unahur202# | 756e61687572323332 | 568 | +111 | 30 |
+| unahur2025# | 756e6168757232333235 | 691 | +123  | 33 |
 
 
 ### Complejidad temporal
@@ -126,3 +126,18 @@ Como se puede visualizar en la columna _movimientos_ de la tabla inputs, la cant
 ### Complejidad espacial
 
 La complejidad espacial de la máquina de Turing es ```O(n)```, donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que almacenar la cadena de entrada y su representación hexadecimal en la cinta, lo que requiere espacio lineal en función del tamaño de la entrada.
+
+La fórmula utilizada para calcular la cantidad de espacios es la siguiente:
+
+``` 3*n + 3 ```
+
+- ```Si n=1 = 3*1 + 3 = 6```
+- ```Si n=2 = 3*2 + 3 = 9```
+- ```Si n=3 = 3*3 + 3 = 12```
+- ```Si n=4 = 3*4 + 3 = 15```
+- ```Si n=5 = 3*5 + 3 = 18```
+- ```Si n=6 = 3*6 + 3 = 21```
+- ```Si n=7 = 3*7 + 3 = 24```
+- ```Si n=8 = 3*8 + 3 = 27```
+- ```Si n=9 = 3*9 + 3 = 30```
+- ```Si n=10 = 3*10 + 3 = 33```
