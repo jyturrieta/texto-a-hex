@@ -45,8 +45,18 @@ Archivo de entrada: [textoahex.mt]()
 
 ### Inputs
 
-| Entrada | Salida | Movimientos | Celdas |
-| ------- | ------ | ----------- | ------ |
+| Entrada | Salida | Movimientos | Diferencia | Espacios |
+| ------- | ------ | ----------- | ------ | -------- |
+| u# | 75 | 16 | - | 
+| un# | 756e | 43 | +27 | 
+| una# | 756e61 | 82 | +39 |
+| unah# | 756e6168 | 133 | +51 |
+| unahu# | 756e616875 | 196 | +63 |
+| unahur# | 756e61687572 | 271 | +75 |
+| unahur2# | 756e6168757232 | 358 | +87 |
+| unahur20# | 756e616875723233 | 457 | +99 |
+| unahur202# | 756e61687572323332 | 568 | +111 |
+| unahur2025# | 756e6168757232333235 | 691 | +123 |
 
 
 ### Complejidad temporal
