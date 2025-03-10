@@ -101,9 +101,27 @@ Archivo de entrada: [textoahex.mt]()
 
 ### Complejidad temporal
 
-La complejidad temporal de la máquina de Turing es O(n^2), donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que recorrer la cadena de entrada y convertir cada caracter a su representación hexadecimal, lo que implica un tiempo lineal para cada caracter. Sin embargo, como la máquina de Turing tiene que mover la cabeza hacia atrás y hacia adelante en la cinta para escribir el resultado, esto añade un factor adicional de O(n) al tiempo total.
+La complejidad temporal de la máquina de Turing es ```O(n^2)```, donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que recorrer la cadena de entrada y convertir cada caracter a su representación hexadecimal, lo que implica un tiempo lineal para cada caracter. 
+La fórmula utilizada para calcular la cantidad de movimientos es la siguiente:
 
-(es una cuadratica)
+``` 6*n^2 + 9*n + 1 ```
+
+- Si n=0 = 6*0^2 + 9*0 + 1 = 1
+- Si n=1 = 6*1^2 + 9*1 + 1 = 16
+- Si n=2 = 6*2^2 + 9*2 + 1 = 43
+- Si n=3 = 6*3^2 + 9*3 + 1 = 82
+- Si n=4 = 6*4^2 + 9*4 + 1 = 133
+- Si n=5 = 6*5^2 + 9*5 + 1 = 196
+- Si n=6 = 6*6^2 + 9*6 + 1 = 271
+- Si n=7 = 6*7^2 + 9*7 + 1 = 358
+- Si n=8 = 6*8^2 + 9*8 + 1 = 457
+- Si n=9 = 6*9^2 + 9*9 + 1 = 568
+- Si n=10 = 6*10^2 + 9*10 + 1 = 691
+
+Como se puede visualizar en la columna _movimientos_ de la tabla inputs, la cantidad de movimientos aumenta cuadráticamente con respecto al tamaño de la entrada. Tambien se nota que la diferencia de movimientos entre cada n crece 12 movimientos cada vez que se aumenta en 1 el tamaño de la entrada.
+
+
+
 
 ### Complejidad espacial
 
