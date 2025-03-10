@@ -66,20 +66,20 @@ La máquina de Turing se diseñará para leer un texto de izquierda a derecha, c
 - Γ: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, #, _} *(Aclaración: el caracter _ es $ en el simulador)* 
 - q0: q0
 - qA: {q55}
-- δ: 
+- δ: [transiciones.md](/transiciones.md)
   
 ## Diseño JFLAP
 
 ![Diagrama de la máquina de Turing](/resources/jflap-texto-hex.png)
 
-Archivo JFLAP: [texto-a-hex.jff]()
+Archivo JFLAP: [texto-a-hex.jff](/textoahex.jff)
 
 
 ## Simulador
 
 Link al simulador: [turingmachinesimulator.com/shared/qhmguggqgp](https://turingmachinesimulator.com/shared/qhmguggqgp)
 
-Archivo de entrada: [textoahex.mt]()
+Archivo de entrada: [textoahex.mt](/textoahex.mt)
 
 ## Complejidad
 
