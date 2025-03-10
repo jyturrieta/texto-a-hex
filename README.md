@@ -1,4 +1,4 @@
-# texto-a-hex
+# Máquina de Turing para convertir texto (ASCII) a hexadecimal
 
 ## Función que computa
 
