@@ -72,14 +72,14 @@ La máquina de Turing se diseñará para leer un texto de izquierda a derecha, c
 
 ![Diagrama de la máquina de Turing](/resources/jflap-texto-hex.png)
 
-Archivo JFLAP: [texto-a-hex.jff](/textoahex.jff)
+Archivo JFLAP: [texto-a-hex.jff](/textoahexsinnumeral.jff)
 
 
 ## Simulador
 
 Link al simulador: [http://turingmachinesimulator.com/shared/mlcwpgbyqp](http://turingmachinesimulator.com/shared/mlcwpgbyqp)
 
-Archivo de entrada: [textoahex.mt](/textoahex.mt)
+Archivo de entrada: [textoahexsinnumeral.mt](/textoahexsinnumeral.mt)
 
 ## Complejidad
 
@@ -87,16 +87,16 @@ Archivo de entrada: [textoahex.mt](/textoahex.mt)
 
 | Entrada | Salida | Movimientos | Diferencia n+1 | Espacios |
 | ------- | ------ | ----------- | ------ | -------- |
-| u# | 75 | 16 | - | 6 |
-| un# | 756e | 43 | +27 | 9 |
-| una# | 756e61 | 82 | +39 | 12
-| unah# | 756e6168 | 133 | +51 | 15 | 
-| unahu# | 756e616875 | 196 | +63 | 18 |
-| unahur# | 756e61687572 | 271 | +75 | 21 |
-| unahur2# | 756e6168757232 | 358 | +87 |  24 |
-| unahur20# | 756e616875723230 | 457 | +99 | 27 |
-| unahur202# | 756e61687572323032 | 568 | +111 | 30 |
-| unahur2025# | 756e6168757232303235 | 691 | +123  | 33 |
+| u | 75 | 20 | - | 6 |
+| un | 756e | 49 | +29 | 9 |
+| una | 756e61 | 90 | +41 | 12
+| unah | 756e6168 | 143 | +53 | 15 | 
+| unahu | 756e616875 | 208 | +65 | 18 |
+| unahur | 756e61687572 | 285 | +77 | 21 |
+| unahur2 | 756e6168757232 | 374 | +89 |  24 |
+| unahur20 | 756e616875723230 | 475 | +101 | 27 |
+| unahur202 | 756e61687572323032 | 588 | +113 | 30 |
+| unahur2025 | 756e6168757232303235 | 713 | +125  | 33 |
 
 
 ### Complejidad temporal
@@ -104,19 +104,18 @@ Archivo de entrada: [textoahex.mt](/textoahex.mt)
 La complejidad temporal de la máquina de Turing es ```O(n^2)```, donde n es el número de caracteres en la cadena de entrada. Esto se debe a que la máquina de Turing tiene que recorrer la cadena de entrada y convertir cada caracter a su representación hexadecimal, lo que implica un tiempo lineal para cada caracter. 
 La fórmula utilizada para calcular la cantidad de movimientos es la siguiente:
 
-``` 6*n^2 + 9*n + 1 ```
+``` 6*n^2 + 11*n + 3 ```
 
-- ```Si n=0 = 6*0^2 + 9*0 + 1 = 1```
-- ```Si n=1 = 61^2 + 9*1 + 1 = 16```
-- ```Si n=2 = 6*2^2 + 9*2 + 1 = 43```
-- ```Si n=3 = 6*3^2 + 9*3 + 1 = 82```
-- ```Si n=4 = 6*4^2 + 9*4 + 1 = 133```
-- ```Si n=5 = 6*5^2 + 9*5 + 1 = 196```
-- ```Si n=6 = 6*6^2 + 9*6 + 1 = 271```
-- ```Si n=7 = 6*7^2 + 9*7 + 1 = 358```
-- ```Si n=8 = 6*8^2 + 9*8 + 1 = 457```
-- ```Si n=9 = 6*9^2 + 9*9 + 1 = 568```
-- ```Si n=10 = 6*10^2 + 9*10 + 1 = 691```
+- ```Si n=1 = 61^2 + 11*1 + 3 = 20```
+- ```Si n=2 = 6*2^2 + 11*2 + 3 = 49```
+- ```Si n=3 = 6*3^2 + 11*3 + 3 = 90```
+- ```Si n=4 = 6*4^2 + 11*4 + 3 = 143```
+- ```Si n=5 = 6*5^2 + 11*5 + 3 = 208```
+- ```Si n=6 = 6*6^2 + 11*6 + 3 = 285```
+- ```Si n=7 = 6*7^2 + 11*7 + 3 = 374```
+- ```Si n=8 = 6*8^2 + 11*8 + 3 = 475```
+- ```Si n=9 = 6*9^2 + 11*9 + 3 = 588```
+- ```Si n=10 = 6*10^2 + 11*10 + 3 = 713```
 
 Como se puede visualizar en la columna _movimientos_ de la tabla inputs, la cantidad de movimientos aumenta cuadráticamente con respecto al tamaño de la entrada. Tambien se nota que la diferencia de movimientos entre cada n crece 12 movimientos cada vez que se aumenta en 1 el tamaño de la entrada.
 
