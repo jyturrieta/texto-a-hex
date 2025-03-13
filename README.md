@@ -77,7 +77,7 @@ Archivo JFLAP: [texto-a-hex.jff](/textoahex.jff)
 
 ## Simulador
 
-Link al simulador: [turingmachinesimulator.com/shared/qhmguggqgp](https://turingmachinesimulator.com/shared/qhmguggqgp)
+Link al simulador: [http://turingmachinesimulator.com/shared/mlcwpgbyqp](http://turingmachinesimulator.com/shared/mlcwpgbyqp)
 
 Archivo de entrada: [textoahex.mt](/textoahex.mt)
 
